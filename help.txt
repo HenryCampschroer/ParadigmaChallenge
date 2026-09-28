@@ -1,0 +1,38 @@
+Compile: ghc -Wall filename -fforce-recomp
+
+Run: ./filename
+
+Compile and run: runghc filename
+
+Interactive environment: ghci
+Quit: :quit
+
+
+Example: Define names:
+ghci> double x = x + x
+ghci> double 2
+4
+
+Example: Writing multi line code:
+ghci> :{
+| map f list =
+|     case list of
+|         [] -> []
+|         x : xs -> f x : map f xs
+| :}
+ghci> map (+1) [1, 2, 3]
+[2,3,4]
+
+Example: Load files:
+ghci> :load test.hs
+[1 of 1] Compiling Main             ( test.hs, interpreted )
+Ok, one module loaded.
+ghci> main
+Hello, Haskell!
+
+Example: Import libraries
+ghci> import Data.Bits
+ghci> shiftL 32 1
+64
+ghci> clearBit 33 0
+32
