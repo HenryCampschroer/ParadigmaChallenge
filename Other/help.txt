@@ -36,3 +36,12 @@ ghci> shiftL 32 1
 64
 ghci> clearBit 33 0
 32
+
+https://www.haskell.org/
+https://en.wikibooks.org/wiki/Haskell/Higher-order_functions
+https://en.wikibooks.org/wiki/Haskell/Recursion
+https://rosettacode.org/wiki/Word_frequency#Haskell
+https://stackoverflow.com/questions/7867723/haskell-file-reading
+https://hackage.haskell.org/package/haskell2020-0.1.0.0/docs/Data-Char.html
+https://stackoverflow.com/questions/4978578/how-to-split-a-string-in-haskell
+https://stackoverflow.com/questions/5289779/printing-elements-of-a-list-on-new-lines
