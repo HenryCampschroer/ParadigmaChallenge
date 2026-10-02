@@ -45,9 +45,9 @@ neemWoord (teken : rest) -- (teken : rest) splitst de tekst in het eerste teken 
 -- en het teken wordt er weer voor gezet.
   | isLetter teken = let (woord, overig) = neemWoord rest in (teken : woord, overig) 
   -- Dit zijn drie voorwaarden gescheiden door kommas, en ze moeten alle drie kloppen:
-  -- 1. teken is een apostrof (== vergelijkt het teken met dit teken).
+  -- 1. teken is een apostrof
   -- 2. "(volgTeken : _) <- rest" kijkt of er na de apostrof nog een teken komt. Zo ja,
-  --    dan heet dat teken volgTeken. _ betekent: de rest wordt genegeert. Is "rest" leeg,
+  --    dan heet dat teken volgTeken. _ betekent: alles wat na het volgteken komt wordt genegeert. Is rest leeg,
   --    dan past het patroon niet en klopt deze voorwaarde niet.
   -- 3. Het volgende teken volgTeken is een letter.
   -- Dan hoort de apostrof bij het woord en wordt hij eraan vastgezet.
